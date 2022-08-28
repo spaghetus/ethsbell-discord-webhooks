@@ -9,5 +9,5 @@ To set it up:
 * Create a file with a list of all discord webhooks to use
 * Add a line to the root crontab like this: (all arguments are optional)
 ```crontab
-0 0 * * * bash -c '/bin/ethsbell-discord-webhooks -n 7 -i /usr/share/bell-webhook-urls -t 0 -u https://ethsbell.app/api/v1/schedule > /etc/cron.d/ethsbell.crontab'
+0 0 */5 * * bash -c '/bin/ethsbell-discord-webhooks -n 7 -i /usr/share/bell-webhook-urls -t 0 -u https://ethsbell.app/api/v1/schedule > /etc/cron.d/ethsbell.crontab'
 ```
